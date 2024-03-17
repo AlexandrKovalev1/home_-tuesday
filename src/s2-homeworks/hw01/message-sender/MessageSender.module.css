@@ -1,18 +1,58 @@
 .sendForm {
-
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    gap: 44px;
+    width: 100%;
+    bottom: 32px;
+    right: 0;
+    left: 0;
+    padding: 0 70px;
 }
 
 .textarea {
+    padding-left: 24px;
+    position: relative;
+    resize: none;
+    grid-area: 1/1/2/2;
+    font-size: 34px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    background-color: #F5F7FB;
+    box-shadow: 0 1px 2px 0 #1D21261A;
 
+
+    &::placeholder {
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        font-size: 14px;
+    }
+
+    &:focus-visible {
+        outline: 1px solid;
+    }
 }
 
 .button {
+    background-color: #0066CC;
+    color: #FFFFFF;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
 
+    &:focus-visible {
+        outline: 1px solid;
+    }
 }
 
 .button:hover {
 
 }
+
 .button:active {
 
 }
